@@ -1,8 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
-      domains: ['lh3.googleusercontent.com', 'images.unsplash.com'],
-    },
-  };
-  
-  module.exports = nextConfig;
+require('dotenv').config();
+
+module.exports = {
+  env: {
+    NEXT_PUBLIC_SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    NEXT_PUBLIC_SANITY_DATA_SET: process.env.NEXT_PUBLIC_SANITY_DATA_SET,
+    GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
+    GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
+    GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
+    GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    SANITY_STUDIO_TOKEN: process.env.SANITY_STUDIO_TOKEN,
+    STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
+  },
+};
+
