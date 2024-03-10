@@ -1,6 +1,7 @@
 # Hotel Management System
 
  Created to improve my skills in NextJs
+ ![alt text](image.png)
 
 ## Features
 
